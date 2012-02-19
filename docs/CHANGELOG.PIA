@@ -1,0 +1,51 @@
+ --- 3.1 ---
+ bug: If a plugin does not properly define a message, the Cacti UI will break
+ bug: Prevent searching on Data Sources page from showing odd characters
+ bug: Reduce default font sizes
+ bug: Escape some commands
+ feature: Add hooks for removing Devices, Graphs, Data Sources and Users
+ feature: Add new hook 'logout_pre_session_destroy', logout.php
+ feature: Add new hook 'logout_post_session_destroy', logout.php
+ feature: Add new hook 'nav_login_before', top_header.php, top_graph_header.php
+ feature: Add new hook 'nav_login_after', top_header.php, top_graph_header.php
+ feature: Improve Searching from Plugin Management Interface
+ feature: Add Rows Selector to Plugin Management Interface
+
+ --- 2.9 - 3.0 ---
+ bug: Prevent filters from affecting plugin links, data_sources.php
+ bug: Don't go into an endless loop if user does not have 'temporary' table grant, plugins.php
+ bug: Rename hook 'top_header' to 'bottom_footer', include/bottom_footer.php
+ bug: Rename hook 'top_header' to 'top_graph_header', include/top_graph_header.php
+ bug: Dont generate errors when there are no 'keys' defined in a table, lib/plugins.php
+ bug: Refer to table types using 'ENGINE' and not 'TYPE', lib/plugins.php
+ feature: Add new hook 'login_title', auth_login.php
+ feature: Change hook 'login_before' to pass arguments, auth_login.php
+ feature: Add id's to login rows, auth_login.php
+ feature: Add new hook 'graph_items_remove', data_sources.php
+ feature: Add new hook 'graphs_remove', data_sources.php
+ feature: Add new hook 'data_source_remove', data_sources.php
+ feature: Add new hook 'page_buttons', graph.php
+ feature: Add new hook 'tree_view_page_end', graph.php
+ feature: Add new hook 'data_source_remove', graphs.php
+ feature: Add new hook 'graphs_remove', graphs.php
+ feature: Add new hook 'graphs_sql_where', graphs.php
+ feature: Add new hook 'add_graph_template_to_host', host.php
+ feature: Add new hook 'device_remove', host.php
+ feature: Add new hook 'data_source_remove', host.php
+ feature: Add new hook 'graphs_remove', host.php
+ feature: Rearrange the Plugin Management page, plugins.php
+ feature: Add new hook 'user_remove', user_admin.php
+ feature: Add new hook 'user_admin_tab', user_admin.php
+ feature: Add new hook 'user_admin_run_action', user_admin.php
+ feature: Add new hook 'custom_version_info', utilities.php
+ feature: Add new hook 'page_bottom', include/bottom_footer.php
+ feature: Moved $plugins array to 'config.php' from 'global.php', include/config.php.dist
+ feature: Add new hook 'print_top_header', include/top_graph_header.php
+ feature: Add new hook 'add_graph_template_to_host', lib/api_device.php
+ feature: Add new hook 'api_device_new', lib/api_device.php
+ feature: Add new hook 'update_data_source_title_cache', lib/variables.php
+ feature: Add new hook 'graph_tree_page_buttons', lib/html_tree.php
+ feature: Add new hook 'tree_after', lib/html_tree.php
+ feature: Add new hook 'tree_view_page_end', lib/html_tree.php
+ feature: Add new hook 'create_complete_graph_from_template', lib/template.php
+
